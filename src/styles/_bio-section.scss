@@ -1,0 +1,95 @@
+.Bio-section-container {
+    height: max-content;
+    width: 100vw;
+    filter: saturate(0);
+    @extend .cover-image;
+    padding: 10vh 0 20vh 0;
+    box-shadow:inset 0px 0px 0px 20000px rgba(255, 255, 255, .2);
+   
+
+    .Bio-parent {   
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 5vh 0 0 0;
+        z-index: 20;
+        position: relative;
+
+        @include mobile {
+            width: 90%;
+        }
+
+        @include tablet {
+            padding: 15vh 0 5vh 0;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .Animation-parent {
+            opacity: 0;
+            @include transform(translateY(30%));
+            
+        }
+
+        .Text-animation {
+            opacity: 1;
+            @include transform(translateY(0));
+            transition: 0.8s;
+        }
+
+        .Bio-sub-parent {
+            padding: 150px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            z-index: 100 !important;
+            position: relative;
+            flex-direction: column;
+            background: rgba(0, 0, 0, .5);
+
+            @include mobile {
+                padding: 0;
+                margin-bottom: 5vh;
+            }
+
+            @include desktop {
+                flex-direction: row;
+            }
+        
+        }
+
+        .Typed-bio-header {
+            width: 100%;
+            text-align: center;
+            border: solid 5px #fff;
+            width: fit-content;
+            margin: 0 auto;
+            transition: 0.3s;   
+            color: #fff !important;
+        }
+
+        .Parallax-parent-lower {
+            z-index: 200;
+            position: relative;
+        }
+
+        .Lower {
+            color: #fff;
+        }
+
+        .Bio-blurb {
+            line-height: 26px;
+            color: #fff;
+            width: 70%;
+
+            @include mobile {
+                margin-top: 15vh;
+            }
+
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+    }
+}

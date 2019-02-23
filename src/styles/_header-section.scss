@@ -1,0 +1,195 @@
+.Header-section-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    background-image: url('../assets/images/logos/zthepro.jpg');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: fade-in-animation 0.5s ease-in 0s 1 forwards;
+    position: relative;
+    z-index: 20;
+
+    .Header-section-hero {
+        height: 90%;
+        width: 100%;
+        border: solid 33px rgba(0, 0, 0, .2);
+        background-image: url('../assets/images/gallery/hero-image.jpg');
+        @extend .cover-image;
+        animation: fade-in-animation 2.5s ease-in 0s 1 backwards;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        z-index: 10;
+        position: relative;
+        background-position-y: 0;
+        box-shadow:inset 0px 0px 0px 20000px rgba(255, 255, 255, .4);
+
+
+        @include mobile {
+            background-position-x: 17%;
+            border: solid 20px rgba(0, 0, 0, 0.2);
+        }
+        
+
+        .Name-header-parent {
+            opacity: 0;
+            align-items: center;
+            right: 0px;
+            font-size: 9rem;
+            justify-content: center;
+            animation: fade-in-animation 2s ease-in-out 3s 1 forwards;
+            transform: translateY(-40%);
+            @extend .flex;
+            @extend .flex-row;
+            cursor: default;
+            height: 50%;
+            width: 50%;
+            font-size: 4rem;
+            -webkit-text-stroke: 4px black;
+            color: #000;
+            // text-shadow: 0px 1px 12px rgba(0, 0, 0, .4);
+
+         
+            @include mobile {
+                font-size: 3rem;
+                -webkit-text-stroke: 2px black;
+                // text-shadow: 0px 1px 5px rgba(0, 0, 0, .3);
+            }
+
+            .Name {
+                transition: 0.4s;
+
+                &:hover {
+                    transition: 0.4s;
+                    transform: scale(1.1);
+                }
+            }
+            
+        }
+
+        
+        #bars {
+            height: 50%;
+            width: 50%;
+            opacity: 0;
+            animation: fade-in-animation 0.5s ease-in-out 3s 1 forwards;
+            
+            @include mobile {
+                transform: scaleY(.5) translateY(50%) !important;
+            }
+
+            .bars {
+                height: 100%;
+                max-width: 300px;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                align-items: flex-end; 
+                position: relative;
+                right: 0vw;
+                margin: 0 auto;
+
+                @include mobile {
+                    right: 0;
+                }
+            }
+
+            .bar {
+                background: #000;
+                bottom: 1px;
+                height: 5px;
+                width: 5px;       
+                animation: sound 0ms 4s linear infinite alternate;
+                transition: 0.4s;
+                padding: 0 3px;
+
+                @include mobile {
+                    width: 3px; 
+                    padding: 0 .05rem;
+                }
+             }
+             
+             .bar:nth-child(1)  { left: 0px; animation-duration: 624ms; }
+             .bar:nth-child(2)  { left: 10px; animation-duration: 683ms; }
+             .bar:nth-child(3)  { left: 20px; animation-duration: 657ms; }
+             .bar:nth-child(4)  { left: 30px; animation-duration: 708ms; }
+             .bar:nth-child(5)  { left: 40px; animation-duration: 650ms; }
+             .bar:nth-child(6)  { left: 50px; animation-duration: 677ms; }
+             .bar:nth-child(7)  { left: 60px; animation-duration: 691ms; }
+             .bar:nth-child(8)  { left: 70px; animation-duration: 669ms; }
+             .bar:nth-child(9)  { left: 80px; animation-duration: 737ms; }
+             .bar:nth-child(10) { left: 90px; animation-duration: 732ms; }
+             .bar:nth-child(11)  { left: 100px; animation-duration: 664ms; }
+             .bar:nth-child(12)  { left: 110px; animation-duration: 723ms; }
+             .bar:nth-child(13)  { left: 120px; animation-duration: 657ms; }
+             .bar:nth-child(14)  { left: 130px; animation-duration: 698ms; }
+             .bar:nth-child(15)  { left: 140px; animation-duration: 716ms; }
+             .bar:nth-child(16)  { left: 150px; animation-duration: 724ms; }
+             .bar:nth-child(17)  { left: 160px; animation-duration: 666ms; }
+             .bar:nth-child(18)  { left: 170px; animation-duration: 652ms; }
+             .bar:nth-child(19)  { left: 180px; animation-duration: 737ms; }
+             .bar:nth-child(20) { left: 190px; animation-duration: 792ms; }
+             .bar:nth-child(21)  { left: 200px; animation-duration: 714ms; }
+             .bar:nth-child(22)  { left: 210px; animation-duration: 738ms; }
+             .bar:nth-child(23)  { left: 220px; animation-duration: 662ms; }
+             .bar:nth-child(24)  { left: 230px; animation-duration: 753ms; }
+             .bar:nth-child(25)  { left: 240px; animation-duration: 785ms; }
+             .bar:nth-child(26)  { left: 250px; animation-duration: 707ms; }
+             .bar:nth-child(27)  { left: 260px; animation-duration: 669ms; }
+             .bar:nth-child(28)  { left: 270px; animation-duration: 742ms; }
+             .bar:nth-child(29)  { left: 280px; animation-duration: 670ms; }
+             .bar:nth-child(30) { left: 290px; animation-duration: 653ms; }
+             .bar:nth-child(31)  { left: 300px; animation-duration: 674ms; }
+             .bar:nth-child(32)  { left: 310px; animation-duration: 667ms; }
+             .bar:nth-child(33)  { left: 320px; animation-duration: 647ms; }
+             .bar:nth-child(34)  { left: 330px; animation-duration: 678ms; }
+             .bar:nth-child(35)  { left: 340px; animation-duration: 640ms; }
+             .bar:nth-child(36)  { left: 350px; animation-duration: 677ms; }
+             .bar:nth-child(37)  { left: 360px; animation-duration: 671ms; }
+             .bar:nth-child(38)  { left: 370px; animation-duration: 659ms; }
+             .bar:nth-child(39)  { left: 380px; animation-duration: 701ms; }
+             .bar:nth-child(40) { left: 390px; animation-duration: 682ms; }
+        }
+        
+        
+    }
+
+    .Piano-keys {
+        height: 20vh;
+        width: 100vw;
+        z-index: 1;
+        position: relative;
+        background-image: url('../assets/images/gallery/Grey.jpg');
+
+        
+
+        .Header-header-upper {
+            transition: 0.3s;
+            text-shadow: 0px 1px 15px rgba(0, 0, 0, .3);
+            color: #fff;
+            cursor: pointer;
+
+            &.scrolled {
+                display: none;
+                opacity: 0;
+            }
+
+            &:hover {
+                filter: invert(60%);
+                transition: 0.4s;
+            }
+
+           
+        }
+    
+            
+
+        .Parallax-parent-header-upper {
+            opacity: 0;
+            animation: fade-up-and-in-general-animation 2s ease-in-out 3.5s 1 forwards;
+        }
+    }
+
+}

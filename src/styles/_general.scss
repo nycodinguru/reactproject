@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Oswald', sans-serif;
+    // font-family: 'Raleway', sans-serif !important;
+    // font-family: 'Poppins', sans-serif !important;
+    // font-family: 'Montserrat', sans-serif !important;
+    
+  }
+  a {
+    cursor: pointer;
+    &:link,
+    &:hover,
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+  
+  html,
+  #root {
+    height: 100%;
+    background-color: #000;
+  }
+  main{
+    overflow-x: hidden;
+  }
+  body {
+    height: 100%;
+    display: flex;
+    width: 100vw;
+    background: #000;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4{
+    cursor: default;
+    font-family: 'Playfair Display SC', serif !important;
+    font-weight: 100;
+    
+  }
+  
+  .Landing-page-container {
+    background-color: #fff;
+  }
+
+  .cover-image {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-row {
+    flex-direction: row;
+  }
+
+  .Section-Header {
+    letter-spacing: 25px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    padding: 4px 22px 4px 45px;
+
+    @include mobile {
+      font-size: 1.7rem;
+      letter-spacing: 8px;
+      padding: 4px 22px 4px 28px;
+    }
+
+    
+  }
+
+  #Copied-modal {
+    position: fixed;
+    bottom: 10vh;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 50px;
+    z-index: 10000;
+    margin: 0px 50%;
+    background: rgb(37, 37, 37);
+    font-size: 1.3rem;
+    text-align: center;
+    transform: translateX(-50%);
+    padding: 8px 22px;
+    animation: fade-in-out-animation 1s ease-in-out 2s 1 forwards;
+    cursor: default;
+  }

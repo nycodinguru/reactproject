@@ -1,0 +1,160 @@
+.Discography-section-container {
+    height: max-content;
+    width: 100vw;
+    padding-bottom: 30vh;
+    position: relative;
+    @extend .cover-image;
+    z-index: 10;
+    margin-top: 10vh;
+
+    .Discography-section-parent {
+        height: max-content;
+        width:  85%;
+        background-color: rgba(0, 0, 0, .5);
+        margin: 0 auto;
+        top: 10vh;
+        position: relative;
+
+        .Spotify-widget-parent {
+            margin: 0 auto;
+            height: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1000px;
+            width: 100%;
+            flex-wrap: wrap;
+            padding-bottom: 10vh;
+
+            @include mobile {
+                flex-direction: column;
+            }
+
+            .Animation-parent {
+                opacity: 0;
+                @include transform(translateY(30%));
+                
+            }
+
+            .Album-animation {
+                opacity: 1;
+                @include transform(translateY(0));
+                transition: 0.8s;
+            }
+            
+
+            .Album {
+                height: max-content;
+                width: 400px;
+                color: #fff;
+                margin-top: 5vh;
+            
+
+                @include mobile {
+                    width: 300px;
+                }
+
+                .Album-art {
+                    height: 300px;
+                    width: 300px;
+                    margin: 0 auto 19px auto;
+                    transition: 0.4s;
+
+                    .play-button {
+                        width: 30%;
+                        height: 30%;
+                        background-image: url('../assets/images/graphics/playbutton.png');
+                        @extend .cover-image;
+                        margin: auto;
+                        top: 50%;
+                        position: relative;
+                        transform: translateY(-50%);
+                        transition: 0.4s;
+                        opacity: .8;
+
+                        &:hover {
+                            transform: scale(1.05) translateY(-49%);
+                            transition: 0.4s;
+                            cursor: pointer;
+                            opacity: 1;
+                        }
+                        
+                        }
+                    }
+
+                h3, 
+                h4 {
+                    font-family: 'Oswald', sans-serif !important;
+                }
+
+            }
+
+            .Modal-parent {
+                display: none;
+                height: 0;
+                width: 0;
+                z-index: -10000;
+                transition: all 0.4s ease 0s;
+
+                .Modal-player-container {
+                    height: max-content;
+                    width: max-content;
+                    position: relative;
+                    margin: 0 auto;
+                    top: 40%;
+                    background: #fff;
+                    padding: 60px 100px 40px 100px;
+                    box-shadow: 0px 2px 21px 2px rgba(0, 0, 0, .6);
+
+                    @include mobile {
+                        padding: 60px 25px 40px 25px;
+                    }
+                }
+
+                .Modal-close-button {
+                    height: 30px;
+                    width: 30px;
+                    position: absolute;
+                    top: 3px;
+                    right: 3px;
+                    font-size: 1rem;
+                    background-image: url('../assets/images/graphics/x.png');
+                    @extend .cover-image;
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    &:hover {
+                        transform: rotate(180deg);
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+
+
+        }
+
+        .Parallax-parent-header-lower {
+
+            .parallax-inner {
+
+                .Discography-header-lower {
+                    width: 100%;
+                    color: #fff;
+                    border: solid 5px white;
+                    width: fit-content;
+                    margin: 0 auto 15vh auto;
+                    transition: 0.3s;
+                    text-shadow: 0px 1px 15px rgba(0, 0, 0, .3);
+
+                    @include mobile {
+                        transform: translateX(-2%);
+                    }
+                   
+
+                }
+            }
+        }
+        
+    
+}

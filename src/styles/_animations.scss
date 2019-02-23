@@ -1,0 +1,53 @@
+@keyframes fade-in-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-out-animation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1000;
+    }
+}
+
+@keyframes fade-out-animation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-up-and-in-general-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(60%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-17%);
+    }
+}
+
+@keyframes sound {
+    0% {
+       opacity: .35;
+        height: 10px; 
+    }
+    100% {
+        opacity: 1;       
+        height: 80px;        
+    }
+}
